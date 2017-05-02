@@ -15,20 +15,27 @@ $(function() {
 
     var score = (one+two+three+four+five)
 
-    $(".name").text(name);
-
-    if(score > 6)
+    if(score < 6) {
       $(".css").show();
-    if(score < 11 || score > 5)
-      $(".c#").show();
-    if(score < 16 || score > 10)
+    }
+
+    else if (score < 11) {
+      if (score > 5) {
+      $(".java").show();
+      }
+    }
+
+    else if (score < 16) {
+      if (score > 10) {
       $(".ruby").show();
-    if(score > 15)
+      }
+    }
+
+    else if (score > 15) {
       $(".php").show();
+    }
 
-
-
-
+    $(".name").text(name);
 
     event.preventDefault();
   });
