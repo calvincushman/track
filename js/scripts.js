@@ -16,23 +16,27 @@ $(function() {
     var score = (one+two+three+four+five)
 
     if(score < 6) {
-      $(".css").show();
+      $(".css").show()
+      $("#questions").hide();
     }
 
     else if (score < 11) {
       if (score > 5) {
-      $(".java").show();
+      $(".java").show()
+      $("#questions").hide();
       }
     }
 
     else if (score < 16) {
       if (score > 10) {
-      $(".ruby").show();
+      $(".ruby").show()
+      $("#questions").hide();
       }
     }
 
     else if (score > 15) {
-      $(".php").show();
+      $(".php").show()
+      $("#questions").hide();
     }
 
     $(".name").text(name);
