@@ -1,7 +1,25 @@
-.track {
-  display: none;
+body {
+  background-color: #eaeef7;
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
+.codePic {
+  float: right;
+}
+
+.course-descriptions {
+  float: right;
+}
+
+img {
+  max-width: 250px;
+  max-height: auto;
+}
 #questions {
   float:left;
+}
+
+.track {
+  display: none;
 }
