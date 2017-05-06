@@ -2,6 +2,8 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -11,22 +13,42 @@
     <div class="container">
       <div class="header">
         <div class="row">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="col-sm-5 logo">
+            <img src="img/download.png" alt="the Epicodus logo">
+            <div class="col-sm-5 codePic">
+              <img src="img/headerpic.jpeg" alt="a picture of computer code">
+            </div>
+            <h3>Track Suggester</h3>
+          </div>
+          <div class="col-sm-2 course-descriptions">
+            <ul>
+              <li>JAVA</li>
+              <i class = "em em-coffee"></i>
+              <li>CSS</li>
+              <i class = "em em-art"></i>
+              <li>RUBY</li>
+              <i class = "em em-gem"></i>
+              <li>PHP</li>
+              <i class = "em em-books"></i>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="container">
         <!-- /row header-->
       <div class="row">
         <div class="col-md-8">
           <form id="questions">
             <div class="form-group">
-              <label for="appointment">Please enter your name</label>
+              <label for="name">Please enter your name</label>
               <input id="name" class="form-control" type="text">
              </div>
             <!-- /form-group name -->
             <h3>What is your level of education?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="education" value="1">
+                <input type="radio" name="education" value="1" required>
                 Some high school
               </label>
             </div>
@@ -51,7 +73,7 @@
             <h3>Which classes did you enjoy most in school?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="classes" value="1">
+                <input type="radio" name="classes" value="1" required>
                 Art
               </label>
             </div>
@@ -76,7 +98,7 @@
             <h3>What is your level of experience with coding?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="experience" value="1">
+                <input type="radio" name="experience" value="1" required>
                 None
               </label>
             </div>
@@ -101,7 +123,7 @@
             <h3>Of the following, which are you most likely to do in your spare time?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="hobbies" value="1">
+                <input type="radio" name="hobbies" value="1" required>
                 Paint/draw a picture
               </label>
             </div>
@@ -126,7 +148,7 @@
             <h3>Out of the following, which sounds most like a carreer that you would enjoy?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="carreer" value="1">
+                <input type="radio" name="carreer" value="1" required>
                   Designing front end layouts for software and webpages
               </label>
             </div>
